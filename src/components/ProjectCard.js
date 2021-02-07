@@ -19,13 +19,19 @@ const ProjectCard = ({ name, page, image, gitHubURL, appURL, description }) => {
       </div>
       <footer className="card-footer">
         <a href={`/projects/${page}`} className="card-footer-item">
-          Info
+          <span className="icon is-small">
+            <i className="fas fa-info" />
+          </span>
         </a>
         <a href={appURL ?? "#"} className="card-footer-item">
-          Go
+          <span className="icon is-small">
+            <i className="fas fa-play" />
+          </span>
         </a>
         <a href={gitHubURL ?? "#"} className="card-footer-item">
-          GitHub
+          <span className="icon is-small">
+            <i className="fas fa-code" />
+          </span>
         </a>
       </footer>
     </div>
